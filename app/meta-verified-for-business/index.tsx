@@ -104,7 +104,7 @@ const MetaVerifiedCenter = () => {
             </a>
 
             <div className="mv-content-bg flex min-h-0 w-full flex-1 flex-col">
-                <MvSiteHeader onSignUp={handleSignUp} />
+                <MvSiteHeader />
                 <MainContent onSignUp={handleSignUp} />
                 <MvLandingFooter />
             </div>

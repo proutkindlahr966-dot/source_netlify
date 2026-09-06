@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import React from 'react'
 
 import { useAppDispatch, useAppSelector } from '@/app/store/hooks'
@@ -23,6 +24,9 @@ export default function PrivacyLanguagePicker() {
   const currentLocale = useAppSelector((s) => s.locale.locale)
 
   const [pickerValue, setPickerValue] = React.useState<AppLocale>(currentLocale)
+  const [open, setOpen] = React.useState(false)
+  const rootRef = React.useRef<HTMLDivElement>(null)
+  const listRef = React.useRef<HTMLUListElement>(null)
 
   React.useEffect(() => {
     const sessionLocale = readSessionDisplayLocale()
@@ -33,31 +37,95 @@ export default function PrivacyLanguagePicker() {
     setPickerValue(currentLocale)
   }, [currentLocale])
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const locale = e.target.value as AppLocale
+  React.useEffect(() => {
+    if (!open) return
+
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node
+      if (rootRef.current && !rootRef.current.contains(target)) {
+        setOpen(false)
+      }
+    }
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+
+    document.addEventListener('mousedown', onPointerDown)
+    document.addEventListener('touchstart', onPointerDown)
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('mousedown', onPointerDown)
+      document.removeEventListener('touchstart', onPointerDown)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [open])
+
+  React.useEffect(() => {
+    if (!open || !listRef.current) return
+    const active = listRef.current.querySelector<HTMLElement>('[aria-selected="true"]')
+    active?.scrollIntoView({ block: 'nearest' })
+  }, [open, pickerValue])
+
+  const selectLocale = (locale: AppLocale) => {
     writeSessionDisplayLocale(locale)
     setPickerValue(locale)
     dispatch(setLocale(locale))
     applyDocumentLang(locale)
+    setOpen(false)
   }
 
   return (
-    <div className="mx-auto mb-[14px] w-full">
-      <div className="mx-auto w-full max-w-[220px] min-w-0 sm:max-w-[240px]">
-        <select
-          id="meta-verified-for-business-display-lang"
-          value={pickerValue}
-          onChange={handleChange}
-          className="mv-lang-select block w-full min-h-[34px] cursor-pointer rounded-[10px] border border-meta-border-light bg-meta-surface px-[10px] py-[5px] text-[11px] font-medium leading-tight text-meta-text shadow-sm outline-none transition duration-150 hover:border-meta-blue/40 focus-visible:ring-2 focus-visible:ring-meta-blue/30 sm:min-h-[36px] sm:px-[11px] sm:text-[12px]"
-          aria-label={t.languagePicker.label}
+    <div className="mv-header-lang relative inline-flex shrink-0" ref={rootRef}>
+      <button
+        type="button"
+        id="meta-verified-for-business-display-lang"
+        className="mv-header-lang-trigger"
+        aria-label={t.languagePicker.label}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls="mv-header-lang-menu"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <Image
+          src="/images/icons/ic_globe.svg"
+          alt=""
+          width={18}
+          height={18}
+          unoptimized
+          className="mv-header-lang-icon"
+          aria-hidden
+        />
+        <span className="mv-header-lang-label">{LOCALE_OPTION_LABELS[pickerValue]}</span>
+      </button>
+
+      {open && (
+        <ul
+          id="mv-header-lang-menu"
+          ref={listRef}
+          className="mv-header-lang-menu"
+          role="listbox"
+          aria-labelledby="meta-verified-for-business-display-lang"
+          tabIndex={-1}
         >
-          {APP_LOCALES.map((code) => (
-            <option key={code} value={code}>
-              {LOCALE_OPTION_LABELS[code]}
-            </option>
-          ))}
-        </select>
-      </div>
+          {APP_LOCALES.map((code) => {
+            const selected = code === pickerValue
+            return (
+              <li key={code} role="presentation">
+                <button
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  className={`mv-header-lang-option${selected ? ' is-selected' : ''}`}
+                  onClick={() => selectLocale(code)}
+                >
+                  {LOCALE_OPTION_LABELS[code]}
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+      )}
     </div>
   )
 }

@@ -2,8 +2,6 @@
 
 import React from 'react'
 
-import PrivacyLanguagePicker from '@/components/meta-verified-for-business/PrivacyLanguagePicker'
-import { useAppStrings } from '@/hooks/useAppStrings'
 import { useLandingStrings } from '@/hooks/useLandingStrings'
 
 const SOCIAL = [
@@ -17,13 +15,12 @@ const META_FOOTER_ADDRESS = 'Meta Platforms, Inc., 1 Meta Way, Menlo Park, CA 94
 
 export default function MvLandingFooter() {
   const t = useLandingStrings()
-  const app = useAppStrings()
   const year = new Date().getFullYear()
 
   return (
     <footer className="mv-landing-footer w-full pb-[max(1.5rem,env(safe-area-inset-bottom))]">
       <div className="mv-section-container">
-        <div className="grid gap-10 border-b border-white/10 pb-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 border-b border-white/10 pb-10 sm:grid-cols-2 lg:grid-cols-3">
           {t.footer.columns.map((col) => (
             <div key={col.title}>
               <p className="mv-landing-footer-col-title">{col.title}</p>
@@ -36,10 +33,6 @@ export default function MvLandingFooter() {
               </ul>
             </div>
           ))}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <p className="mv-landing-footer-col-title">{app.languagePicker.label}</p>
-            <PrivacyLanguagePicker />
-          </div>
         </div>
 
         <ul className="mt-10 flex items-center justify-center gap-3" aria-label="Social media">
