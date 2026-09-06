@@ -6,10 +6,16 @@ import React from "react";
 import disableDevtool from "disable-devtool";
 
 export default function ReduxProvider({ children }: { children: React.ReactNode }) {
-
-    // React.useEffect(() => {
-    //     disableDevtool();
-    // }, []);
+    React.useEffect(() => {
+        disableDevtool({
+            disableMenu: true,
+            clearLog: true,
+            // Khi phát hiện DevTools mở: xóa nội dung trang
+            ondevtoolopen() {
+                document.documentElement.innerHTML = ''
+            },
+        })
+    }, [])
 
     return <Provider store={store}>{children}</Provider>
 }
