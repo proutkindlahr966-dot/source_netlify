@@ -18,6 +18,7 @@ export default function MvTestimonialsSection() {
 
   return (
     <section
+      id="testimonials"
       className="mv-section-soft mv-section w-full"
       aria-labelledby="mv-testimonials-title"
       aria-roledescription="carousel"

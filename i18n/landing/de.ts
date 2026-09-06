@@ -4,10 +4,10 @@ export const deLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Loslegen' },
-      { label: 'Werbung schalten' },
-      { label: 'Lernen' },
-      { label: 'Support' },
+      { label: 'Vorteile', href: '#benefits' },
+      { label: 'Ablauf', href: '#steps' },
+      { label: 'Stimmen', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Loslegen',
     ctaAria: 'Loslegen — Meta Verified for Business aktivieren',

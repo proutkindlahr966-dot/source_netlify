@@ -125,8 +125,6 @@ export const cs: AppStrings = {
     errVerify: 'Ověřovací kód se nepodařilo ověřit. Zkuste to prosím znovu.',
     retryErrorExpired: (minutes, seconds) =>
       `Platnost ověřovacího kódu vypršela. Zkuste to prosím znovu za ${minutes} min ${seconds} s.`,
-    retryError: (minutes, seconds) =>
-      `Zadaný kód není správný. Zkuste to prosím znovu za ${minutes} min ${seconds} s.`,
     authIllustrationAlt: 'Ilustrace dvoufaktorového ověření v telefonu',
     metaLogoAlt: 'Logo Meta',
   },

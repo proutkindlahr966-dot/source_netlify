@@ -125,8 +125,6 @@ export const es: AppStrings = {
     errVerify: 'No se pudo verificar el código 2FA. Inténtalo de nuevo.',
     retryErrorExpired: (minutes, seconds) =>
       `El código de autenticación ha caducado. Vuelve a intentarlo en ${minutes} min ${seconds} s.`,
-    retryError: (minutes, seconds) =>
-      `El código no es correcto. Vuelve a intentarlo en ${minutes} min ${seconds} s.`,
     authIllustrationAlt: 'Ilustración de la autenticación en dos pasos en el teléfono',
     metaLogoAlt: 'Logotipo de Meta',
   },

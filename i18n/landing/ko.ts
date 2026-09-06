@@ -4,10 +4,10 @@ export const koLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: '시작하기' },
-      { label: '광고' },
-      { label: '배우기' },
-      { label: '지원' },
+      { label: '혜택', href: '#benefits' },
+      { label: '절차', href: '#steps' },
+      { label: '후기', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: '시작하기',
     ctaAria: '시작하기 — Meta Verified for Business 활성화',

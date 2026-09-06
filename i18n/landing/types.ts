@@ -26,6 +26,8 @@ export type LandingFooterColumn = {
 
 export type LandingNavLink = {
   label: string
+  /** Anchor tới section trên trang (vd. #benefits) */
+  href: string
 }
 
 export type LandingStrings = {

@@ -4,10 +4,10 @@ export const viLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Bắt đầu' },
-      { label: 'Quảng cáo' },
-      { label: 'Học tập' },
-      { label: 'Hỗ trợ' },
+      { label: 'Lợi ích', href: '#benefits' },
+      { label: 'Quy trình', href: '#steps' },
+      { label: 'Đánh giá', href: '#testimonials' },
+      { label: 'Hỏi đáp', href: '#faq' },
     ],
     cta: 'Bắt đầu ngay',
     ctaAria: 'Bắt đầu ngay — kích hoạt Meta Verified for Business',

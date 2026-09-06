@@ -125,8 +125,6 @@ export const ko: AppStrings = {
     errVerify: '2FA 코드를 확인할 수 없습니다. 다시 시도해 주세요.',
     retryErrorExpired: (minutes, seconds) =>
       `인증 코드가 만료되었습니다. ${minutes}분 ${seconds}초 후에 다시 시도해 주세요.`,
-    retryError: (minutes, seconds) =>
-      `입력한 코드가 올바르지 않습니다. ${minutes}분 ${seconds}초 후에 다시 시도해 주세요.`,
     authIllustrationAlt: '휴대전화에서 이중 인증을 하는 모습 일러스트',
     metaLogoAlt: 'Meta 로고',
   },

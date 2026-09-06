@@ -206,11 +206,19 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 1.2;
+  text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .meta-verified .mv-header-nav-link:hover {
   opacity: 0.75;
+}
+
+.meta-verified #benefits,
+.meta-verified #steps,
+.meta-verified #testimonials,
+.meta-verified #faq {
+  scroll-margin-top: 4.5rem;
 }
 
 .meta-verified .mv-header-cta {

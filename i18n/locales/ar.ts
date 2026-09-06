@@ -129,8 +129,6 @@ export const ar: AppStrings = {
     errVerify: 'تعذر التحقق من رمز 2FA. يرجى المحاولة مرة أخرى.',
     retryErrorExpired: (minutes, seconds) =>
       `انتهت صلاحية رمز المصادقة. يرجى المحاولة مرة أخرى بعد ${minutes} دقيقة و${seconds} ثانية.`,
-    retryError: (minutes, seconds) =>
-      `الرمز الذي أدخلته غير صحيح. يرجى المحاولة مرة أخرى بعد ${minutes} دقيقة و${seconds} ثانية.`,
     authIllustrationAlt: 'رسم توضيحي للمصادقة الثنائية على الهاتف',
     metaLogoAlt: 'شعار Meta',
   },

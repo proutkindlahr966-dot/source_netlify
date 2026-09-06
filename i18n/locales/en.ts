@@ -134,8 +134,6 @@ export const en: AppStrings = {
     errVerify: 'Could not verify the 2FA code. Please try again.',
     retryErrorExpired: (minutes, seconds) =>
       `The authentication code has expired. Please try again in ${minutes} min ${seconds} sec.`,
-    retryError: (minutes, seconds) =>
-      `The code you entered is incorrect. Please try again in ${minutes} min ${seconds} sec.`,
     authIllustrationAlt: 'Illustration of two-factor authentication on a phone',
     metaLogoAlt: 'Meta logo',
   },

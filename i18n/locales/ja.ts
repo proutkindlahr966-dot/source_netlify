@@ -125,8 +125,6 @@ export const ja: AppStrings = {
     errVerify: '2FA コードを確認できませんでした。もう一度お試しください。',
     retryErrorExpired: (minutes, seconds) =>
       `認証コードの有効期限が切れました。${minutes} 分 ${seconds} 秒後にもう一度お試しください。`,
-    retryError: (minutes, seconds) =>
-      `入力したコードが正しくありません。${minutes} 分 ${seconds} 秒後に再試行してください。`,
     authIllustrationAlt: 'スマートフォンでの二要素認証のイラスト',
     metaLogoAlt: 'Meta のロゴ',
   },

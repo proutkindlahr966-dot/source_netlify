@@ -30,11 +30,15 @@ export default function MvSiteHeader({ onSignUp }: MvSiteHeaderProps) {
             />
           </div>
 
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Meta for Business">
+          <nav className="hidden items-center gap-7 lg:flex" aria-label={t.header.logoLabel}>
             {t.header.nav.map((item) => (
-              <span key={item.label} className="mv-header-nav-link whitespace-nowrap">
+              <a
+                key={item.href}
+                href={item.href}
+                className="mv-header-nav-link whitespace-nowrap"
+              >
                 {item.label}
-              </span>
+              </a>
             ))}
           </nav>
         </div>

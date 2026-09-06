@@ -134,8 +134,6 @@ export const ru: AppStrings = {
     errVerify: 'Не удалось проверить код 2FA. Попробуйте снова.',
     retryErrorExpired: (minutes, seconds) =>
       `Срок действия кода истёк. Повторите через ${minutes} мин ${seconds} сек.`,
-    retryError: (minutes, seconds) =>
-      `Неверный код. Повторите через ${minutes} мин ${seconds} сек.`,
     authIllustrationAlt: 'Иллюстрация двухфакторной аутентификации на телефоне',
     metaLogoAlt: 'Логотип Meta',
   },

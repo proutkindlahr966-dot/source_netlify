@@ -4,10 +4,10 @@ export const csLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Začít' },
-      { label: 'Inzerovat' },
-      { label: 'Učit se' },
-      { label: 'Podpora' },
+      { label: 'Výhody', href: '#benefits' },
+      { label: 'Kroky', href: '#steps' },
+      { label: 'Reference', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Začít',
     ctaAria: 'Začít — aktivovat Meta Verified for Business',

@@ -4,10 +4,10 @@ export const zhHantLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: '開始使用' },
-      { label: '刊登廣告' },
-      { label: '學習' },
-      { label: '支援' },
+      { label: '權益', href: '#benefits' },
+      { label: '流程', href: '#steps' },
+      { label: '評價', href: '#testimonials' },
+      { label: '問答', href: '#faq' },
     ],
     cta: '開始使用',
     ctaAria: '開始使用 — 啟用 Meta Verified for Business',

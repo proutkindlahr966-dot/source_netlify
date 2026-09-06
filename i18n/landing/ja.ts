@@ -4,10 +4,10 @@ export const jaLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: '始める' },
-      { label: '広告' },
-      { label: '学ぶ' },
-      { label: 'サポート' },
+      { label: '特典', href: '#benefits' },
+      { label: '手順', href: '#steps' },
+      { label: '事例', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: '始める',
     ctaAria: '始める — Meta Verified for Business を有効化',

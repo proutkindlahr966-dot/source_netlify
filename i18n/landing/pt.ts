@@ -4,10 +4,10 @@ export const ptLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Começar' },
-      { label: 'Anunciar' },
-      { label: 'Aprender' },
-      { label: 'Suporte' },
+      { label: 'Benefícios', href: '#benefits' },
+      { label: 'Etapas', href: '#steps' },
+      { label: 'Depoimentos', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Começar',
     ctaAria: 'Começar — ativar Meta Verified for Business',

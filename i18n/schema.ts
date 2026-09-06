@@ -158,8 +158,6 @@ export type AppStrings = {
     errVerify: string
     /** Sau lần nhập sai thứ nhất — trước khi cho nhập lại lần 2 */
     retryErrorExpired: (minutes: number, seconds: number) => string
-    /** Sau lần nhập sai thứ hai — trước khi cho nhập lần 3 */
-    retryError: (minutes: number, seconds: number) => string
     authIllustrationAlt: string
     metaLogoAlt: string
   }

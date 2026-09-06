@@ -13,7 +13,7 @@ export default function MvFaqSection() {
   }
 
   return (
-    <section className="mv-section w-full bg-white" aria-labelledby="mv-faq-title">
+    <section id="faq" className="mv-section w-full bg-white" aria-labelledby="mv-faq-title">
       <div className="mv-section-container max-w-[45rem]">
         <h2 id="mv-faq-title" className="mv-section-heading text-center">
           {t.faq.title}

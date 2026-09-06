@@ -4,10 +4,10 @@ export const ruLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Начать' },
-      { label: 'Реклама' },
-      { label: 'Обучение' },
-      { label: 'Поддержка' },
+      { label: 'Преимущества', href: '#benefits' },
+      { label: 'Этапы', href: '#steps' },
+      { label: 'Отзывы', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Начать',
     ctaAria: 'Начать — активировать Meta Verified for Business',

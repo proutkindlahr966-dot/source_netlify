@@ -4,10 +4,10 @@ export const arLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'ابدأ' },
-      { label: 'الإعلان' },
-      { label: 'تعلّم' },
-      { label: 'الدعم' },
+      { label: 'المزايا', href: '#benefits' },
+      { label: 'الخطوات', href: '#steps' },
+      { label: 'الآراء', href: '#testimonials' },
+      { label: 'الأسئلة', href: '#faq' },
     ],
     cta: 'ابدأ',
     ctaAria: 'ابدأ — تفعيل Meta Verified for Business',

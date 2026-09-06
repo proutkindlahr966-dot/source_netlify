@@ -4,10 +4,10 @@ export const svLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Kom igång' },
-      { label: 'Annonsera' },
-      { label: 'Lär dig mer' },
-      { label: 'Support' },
+      { label: 'Fördelar', href: '#benefits' },
+      { label: 'Steg', href: '#steps' },
+      { label: 'Röster', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Kom igång',
     ctaAria: 'Kom igång — aktivera Meta Verified for Business',

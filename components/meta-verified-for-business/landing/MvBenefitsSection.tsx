@@ -8,7 +8,7 @@ export default function MvBenefitsSection() {
   const t = useLandingStrings()
 
   return (
-    <section className="mv-section w-full bg-white" aria-labelledby="mv-benefits-title">
+    <section id="benefits" className="mv-section w-full bg-white" aria-labelledby="mv-benefits-title">
       <div className="mv-section-container">
         <div className="mv-section-header">
           <h2 id="mv-benefits-title" className="mv-section-heading mv-section-heading-lg">

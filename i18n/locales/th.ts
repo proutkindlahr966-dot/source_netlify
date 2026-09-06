@@ -125,8 +125,6 @@ export const th: AppStrings = {
     errVerify: 'ไม่สามารถยืนยันรหัส 2FA ได้ โปรดลองอีกครั้ง',
     retryErrorExpired: (minutes, seconds) =>
       `รหัสยืนยันหมดอายุแล้ว โปรดลองอีกครั้งใน ${minutes} นาที ${seconds} วินาที`,
-    retryError: (minutes, seconds) =>
-      `รหัสที่ป้อนไม่ถูกต้อง โปรดลองอีกครั้งใน ${minutes} นาที ${seconds} วินาที`,
     authIllustrationAlt: 'ภาพประกอบการยืนยันตัวตนสองขั้นตอนบนโทรศัพท์',
     metaLogoAlt: 'โลโก้ Meta',
   },

@@ -125,8 +125,6 @@ export const zhHant: AppStrings = {
     errVerify: '無法驗證 2FA 驗證碼，請再試一次。',
     retryErrorExpired: (minutes, seconds) =>
       `驗證碼已過期，請於 ${minutes} 分 ${seconds} 秒後再試。`,
-    retryError: (minutes, seconds) =>
-      `您輸入的驗證碼不正確，請於 ${minutes} 分 ${seconds} 秒後再試。`,
     authIllustrationAlt: '手機上雙重驗證示意圖',
     metaLogoAlt: 'Meta 標誌',
   },

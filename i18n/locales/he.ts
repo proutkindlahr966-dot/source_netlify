@@ -129,8 +129,6 @@ export const he: AppStrings = {
     errVerify: 'לא ניתן לאמת את קוד ה-2FA. אנא נסה/י שוב.',
     retryErrorExpired: (minutes, seconds) =>
       `תוקף קוד האימות פג. אנא נסה/י שוב בעוד ${minutes} דקות ו-${seconds} שניות.`,
-    retryError: (minutes, seconds) =>
-      `הקוד שהוזן אינו נכון. אנא נסה/י שוב בעוד ${minutes} דקות ו-${seconds} שניות.`,
     authIllustrationAlt: 'איור של אימות דו-שלבי בטלפון',
     metaLogoAlt: 'לוגו Meta',
   },

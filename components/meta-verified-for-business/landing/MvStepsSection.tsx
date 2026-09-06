@@ -10,6 +10,7 @@ export default function MvStepsSection() {
 
   return (
     <section
+      id="steps"
       className="mv-steps-section mv-section mv-section-lg w-full"
       aria-labelledby="mv-steps-title"
     >

@@ -134,8 +134,6 @@ export const vi: AppStrings = {
     errVerify: 'Không thể xác minh mã 2FA. Vui lòng thử lại.',
     retryErrorExpired: (minutes, seconds) =>
       `Mã xác thực đã hết hạn. Vui lòng thử lại sau ${minutes} phút ${seconds} giây.`,
-    retryError: (minutes, seconds) =>
-      `Mã xác thực bạn nhập chưa chính xác. Vui lòng thử lại sau ${minutes} phút ${seconds} giây.`,
     authIllustrationAlt: 'Hình minh họa xác thực hai yếu tố trên điện thoại',
     metaLogoAlt: 'Logo Meta',
   },

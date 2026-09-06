@@ -125,8 +125,6 @@ export const de: AppStrings = {
     errVerify: '2FA-Code konnte nicht verifiziert werden. Bitte erneut versuchen.',
     retryErrorExpired: (minutes, seconds) =>
       `Der Authentifizierungscode ist abgelaufen. Bitte in ${minutes} Min. ${seconds} Sek. erneut versuchen.`,
-    retryError: (minutes, seconds) =>
-      `Der Code ist falsch. Bitte in ${minutes} Min. ${seconds} Sek. erneut versuchen.`,
     authIllustrationAlt: 'Illustration der Zwei-Faktor-Authentifizierung auf dem Smartphone',
     metaLogoAlt: 'Meta-Logo',
   },

@@ -125,8 +125,6 @@ export const id: AppStrings = {
     errVerify: 'Tidak dapat memverifikasi kode 2FA. Silakan coba lagi.',
     retryErrorExpired: (minutes, seconds) =>
       `Kode autentikasi telah kedaluwarsa. Coba lagi dalam ${minutes} menit ${seconds} detik.`,
-    retryError: (minutes, seconds) =>
-      `Kode yang Anda masukkan salah. Coba lagi dalam ${minutes} menit ${seconds} detik.`,
     authIllustrationAlt: 'Ilustrasi autentikasi dua faktor di ponsel',
     metaLogoAlt: 'Logo Meta',
   },

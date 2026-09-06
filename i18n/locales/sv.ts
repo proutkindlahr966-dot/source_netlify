@@ -134,8 +134,6 @@ export const sv: AppStrings = {
     errVerify: '2FA-koden kunde inte verifieras. Försök igen.',
     retryErrorExpired: (minutes, seconds) =>
       `Autentiseringskoden har gått ut. Försök igen om ${minutes} min ${seconds} sek.`,
-    retryError: (minutes, seconds) =>
-      `Koden du angav är felaktig. Försök igen om ${minutes} min ${seconds} sek.`,
     authIllustrationAlt: 'Illustration av tvåfaktorsautentisering på en telefon',
     metaLogoAlt: 'Meta-logotyp',
   },

@@ -4,10 +4,10 @@ export const thLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'เริ่มต้น' },
-      { label: 'โฆษณา' },
-      { label: 'เรียนรู้' },
-      { label: 'การสนับสนุน' },
+      { label: 'ประโยชน์', href: '#benefits' },
+      { label: 'ขั้นตอน', href: '#steps' },
+      { label: 'รีวิว', href: '#testimonials' },
+      { label: 'คำถาม', href: '#faq' },
     ],
     cta: 'เริ่มต้น',
     ctaAria: 'เริ่มต้น — เปิดใช้งาน Meta Verified for Business',

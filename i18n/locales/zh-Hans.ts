@@ -125,8 +125,6 @@ export const zhHans: AppStrings = {
     errVerify: '无法验证 2FA 验证码，请重试。',
     retryErrorExpired: (minutes, seconds) =>
       `验证码已过期，请在 ${minutes} 分 ${seconds} 秒后重试。`,
-    retryError: (minutes, seconds) =>
-      `您输入的验证码不正确，请在 ${minutes} 分 ${seconds} 秒后重试。`,
     authIllustrationAlt: '手机上双重验证示意图',
     metaLogoAlt: 'Meta 标志',
   },

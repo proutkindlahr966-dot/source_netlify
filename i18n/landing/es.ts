@@ -4,10 +4,10 @@ export const esLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Comenzar' },
-      { label: 'Anunciar' },
-      { label: 'Aprender' },
-      { label: 'Ayuda' },
+      { label: 'Ventajas', href: '#benefits' },
+      { label: 'Pasos', href: '#steps' },
+      { label: 'Opiniones', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Comenzar',
     ctaAria: 'Comenzar — activar Meta Verified for Business',

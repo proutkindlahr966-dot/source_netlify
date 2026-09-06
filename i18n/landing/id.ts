@@ -4,10 +4,10 @@ export const idLanding: LandingStrings = {
   header: {
     logoLabel: 'Meta',
     nav: [
-      { label: 'Memulai' },
-      { label: 'Iklankan' },
-      { label: 'Pelajari' },
-      { label: 'Dukungan' },
+      { label: 'Manfaat', href: '#benefits' },
+      { label: 'Langkah', href: '#steps' },
+      { label: 'Ulasan', href: '#testimonials' },
+      { label: 'FAQ', href: '#faq' },
     ],
     cta: 'Memulai',
     ctaAria: 'Memulai — aktifkan Meta Verified for Business',
