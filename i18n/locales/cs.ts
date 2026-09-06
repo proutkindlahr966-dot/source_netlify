@@ -73,7 +73,7 @@ export const cs: AppStrings = {
       'např. Oficiální stránka značky ABC; dokončení aktivace pomůže zobrazit odznak Meta Verified.',
     fbNotifyTitle: 'Na Facebooku',
     fbNotifyDesc:
-      'Oznámení potvrzující oficiální stav ověření Meta Verified.',
+      'Oznámení o posouzení stavu ověření přijde na Facebook — toto oznámení je určeno vám.',
     fbNotifyAria: 'Povolit oznámení na Facebooku',
     agree: 'Souhlasím s',
     agreeTerms: 'Podmínkami používání',

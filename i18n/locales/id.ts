@@ -73,7 +73,7 @@ export const id: AppStrings = {
       'Contoh: Halaman resmi untuk merek ABC; menyelesaikan aktivasi membantu menampilkan lencana Meta Verified.',
     fbNotifyTitle: 'Di Facebook',
     fbNotifyDesc:
-      'Notifikasi yang mengonfirmasi status verifikasi resmi Meta Verified.',
+      'Notifikasi peninjauan status verifikasi akan dikirim di Facebook — notifikasi itu ditujukan untuk Anda.',
     fbNotifyAria: 'Aktifkan notifikasi di Facebook',
     agree: 'Saya setuju dengan',
     agreeTerms: 'Ketentuan Penggunaan',

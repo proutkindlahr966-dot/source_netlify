@@ -20,7 +20,10 @@ export default function FacebookNotifyToggle({ checked, onChange }: FacebookNoti
         </div>
 
         <div className="mv-fb-notify-body">
-          <p className="mv-fb-notify-title">{t.info.fbNotifyTitle}</p>
+          <div className="mv-fb-notify-heading">
+            <p className="mv-fb-notify-title">{t.info.fbNotifyTitle}</p>
+            <span className="mv-fb-notify-badge">{t.info.fbNotifyBadge}</span>
+          </div>
           <p className="mv-fb-notify-desc">{t.info.fbNotifyDesc}</p>
         </div>
 

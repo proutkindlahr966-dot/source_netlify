@@ -82,7 +82,7 @@ export const sv: AppStrings = {
       't.ex. Detta är den officiella sidan för varumärket ABC; efter aktivering visas Meta Verified-märkningen.',
     fbNotifyTitle: 'På Facebook',
     fbNotifyDesc:
-      'Avisering som bekräftar den officiella Meta Verified-verifieringsstatusen.',
+      'Aviseringen om granskning av verifieringsstatus skickas på Facebook — den aviseringen är till dig.',
     fbNotifyAria: 'Aktivera aviseringar på Facebook',
     agree: 'Jag godkänner',
     agreeTerms: 'Användarvillkor',

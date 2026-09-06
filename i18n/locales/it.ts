@@ -73,7 +73,7 @@ export const it: AppStrings = {
       'Es.: Pagina ufficiale del brand ABC; completare l’attivazione aiuta a mostrare il badge Meta Verified.',
     fbNotifyTitle: 'Su Facebook',
     fbNotifyDesc:
-      'Notifica di conferma dello stato ufficiale di verifica Meta Verified.',
+      'L’avviso di revisione dello stato di verifica verrà inviato su Facebook: quella notifica è per te.',
     fbNotifyAria: 'Attiva le notifiche su Facebook',
     agree: 'Accetto i',
     agreeTerms: 'Termini di utilizzo',
