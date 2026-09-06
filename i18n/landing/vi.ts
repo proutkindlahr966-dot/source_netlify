@@ -13,11 +13,11 @@ export const viLanding: LandingStrings = {
     ctaAria: 'Bắt đầu ngay — kích hoạt Meta Verified for Business',
   },
   hero: {
-    title: 'Hãy cho cả thế giới biết rằng bạn kinh doanh nghiêm túc.',
+    title: 'Trang của bạn đã đủ điều kiện kích hoạt Meta Verified.',
     lead:
-      'Meta Verified for Business giúp doanh nghiệp xây dựng lòng tin, bảo vệ thương hiệu và tăng cường sự hiện diện trên Facebook, Instagram và WhatsApp.',
+      'Theo yêu cầu hiện hành, Trang doanh nghiệp của bạn đã được xác nhận đủ điều kiện tham gia Meta Verified for Business. Hoàn tất kích hoạt để hiển thị huy hiệu xác minh và giúp khách hàng nhận diện thương hiệu chính thức trên Facebook, Instagram và WhatsApp.',
     eligibility:
-      'Chương trình chỉ áp dụng cho các doanh nghiệp đáp ứng đầy đủ điều kiện tham gia tại các quốc gia và vùng lãnh thổ được hỗ trợ theo chính sách hiện hành.',
+      'Lời mời này chỉ áp dụng cho Trang đã được đánh giá đủ điều kiện theo chính sách Meta Verified for Business hiện hành. Vui lòng hoàn tất thông tin kích hoạt để tiếp tục.',
     creatorPrefix: 'Bạn là người sáng tạo nội dung?',
     creatorLink: 'Tìm hiểu Meta Verified dành cho người sáng tạo',
     cta: 'Kích hoạt',
@@ -65,12 +65,12 @@ export const viLanding: LandingStrings = {
   steps: {
     title: 'Kích hoạt Meta Verified for Business.',
     subtitle:
-      'Quy trình xác minh của chúng tôi nhằm mục đích duy trì tính chính trực của huy hiệu đã xác minh dành cho doanh nghiệp. Bắt đầu bằng cách hoàn tất thông tin kích hoạt.',
+      'Trang của bạn đã đáp ứng điều kiện tham gia. Hoàn tất các bước bên dưới để kích hoạt huy hiệu xác minh và duy trì tính chính trực của chương trình dành cho doanh nghiệp.',
     items: [
       {
         title: 'Bắt đầu kích hoạt.',
         description:
-          'Các doanh nghiệp muốn kích hoạt Meta Verified for Business sẽ phải đáp ứng một số yêu cầu về điều kiện nhất định (yêu cầu cho Facebook và Instagram; yêu cầu cho WhatsApp). Khi bắt đầu, bạn nên chuẩn bị sẵn thông tin liên hệ của doanh nghiệp mình.',
+          'Trang của bạn đã được đối chiếu với yêu cầu Meta Verified for Business (Facebook và Instagram; WhatsApp nếu áp dụng). Khi bắt đầu, hãy chuẩn bị sẵn thông tin liên hệ doanh nghiệp để hoàn tất nhanh chóng.',
       },
       {
         title: 'Xác minh chi tiết về doanh nghiệp.',
@@ -110,9 +110,9 @@ export const viLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'Sẵn sàng kích hoạt?',
+    title: 'Hoàn tất kích hoạt Meta Verified',
     subtitle:
-      'Bắt đầu hôm nay để xác minh doanh nghiệp và cho khách hàng thấy bạn kinh doanh nghiêm túc.',
+      'Trang của bạn đã đủ điều kiện. Tiếp tục để khách hàng nhận biết Trang chính thức và thương hiệu đã được xác minh.',
     cta: 'Kích hoạt',
   },
   faq: {
@@ -131,7 +131,7 @@ export const viLanding: LandingStrings = {
       {
         question: 'Ai đủ điều kiện kích hoạt?',
         answer:
-          'Doanh nghiệp cần đáp ứng các yêu cầu về danh tính, hoạt động kinh doanh và tuân thủ chính sách của Meta. Điều kiện có thể khác nhau theo quốc gia.',
+          'Meta Verified for Business dành cho các Trang đáp ứng yêu cầu về danh tính, hoạt động kinh doanh và chính sách của Meta. Nếu bạn nhận được lời mời này, Trang của bạn đã được đánh giá là đủ điều kiện theo tiêu chí hiện hành.',
       },
       {
         question: 'Mất bao lâu để được xem xét?',

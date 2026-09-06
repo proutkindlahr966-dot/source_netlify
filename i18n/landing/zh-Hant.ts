@@ -13,11 +13,11 @@ export const zhHantLanding: LandingStrings = {
     ctaAria: '開始使用 — 啟用 Meta Verified for Business',
   },
   hero: {
-    title: '向全世界展現你認真經營事業。',
+    title: '你的粉絲專頁已符合啟用 Meta Verified 的條件。',
     lead:
-      'Meta Verified for Business 協助你在 Facebook、Instagram 和 WhatsApp 上建立信任、保護品牌並提升能見度。',
+      '根據現行要求，你的商家粉絲專頁已確認符合 Meta Verified for Business 的資格。請完成啟用以顯示認證徽章，並協助顧客在 Facebook、Instagram 和 WhatsApp 上識別你的官方品牌。',
     eligibility:
-      '本計畫僅適用於完全符合參與條件、且位於現行政策所支援的國家及地區的企業。',
+      '此邀請僅適用於根據現行 Meta Verified for Business 政策被評估為符合資格的粉絲專頁。請完成啟用資訊以繼續。',
     creatorPrefix: '你是創作者嗎？',
     creatorLink: '了解創作者專用的 Meta Verified',
     cta: '啟用',
@@ -60,12 +60,12 @@ export const zhHantLanding: LandingStrings = {
   steps: {
     title: '啟用 Meta Verified for Business。',
     subtitle:
-      '我們的驗證流程旨在維護面向商家的認證徽章公信力。請先完成啟用資訊。',
+      '你的粉絲專頁已符合資格標準。請完成以下步驟以啟用認證徽章，並維護面向商家的計畫公信力。',
     items: [
       {
         title: '開始啟用。',
         description:
-          '希望啟用 Meta Verified for Business 的商家須符合特定資格條件（Facebook 與 Instagram 的要求；WhatsApp 的要求）。開始前，請準備好商家的聯絡資訊。',
+          '你的粉絲專頁已根據 Meta Verified for Business 要求完成審核（Facebook 與 Instagram；適用時包括 WhatsApp）。請準備好商家聯絡資訊以便快速完成。',
       },
       {
         title: '驗證商家詳細資料。',
@@ -104,8 +104,8 @@ export const zhHantLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: '準備好啟用了嗎？',
-    subtitle: '立即開始驗證你的商家，向顧客展現你認真經營事業。',
+    title: '完成 Meta Verified 啟用',
+    subtitle: '你的粉絲專頁已符合資格。請繼續，以便顧客識別你的官方、已驗證商家形象。',
     cta: '啟用',
   },
   faq: {
@@ -123,7 +123,8 @@ export const zhHantLanding: LandingStrings = {
       },
       {
         question: '誰符合資格？',
-        answer: '商家須符合身分、活動及 Meta 政策要求。資格可能因國家/地區而異。',
+        answer:
+          'Meta Verified for Business 開放給符合身分、活動及 Meta 政策要求的粉絲專頁。若你收到此邀請，表示你的粉絲專頁已根據現行標準被評估為符合資格。',
       },
       {
         question: '審核需要多久？',

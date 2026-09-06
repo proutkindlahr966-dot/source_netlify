@@ -13,11 +13,11 @@ export const koLanding: LandingStrings = {
     ctaAria: '시작하기 — Meta Verified for Business 활성화',
   },
   hero: {
-    title: '비즈니스에 진심이라는 것을 세상에 알리세요.',
+    title: '페이지가 Meta Verified 활성화 대상입니다.',
     lead:
-      'Meta Verified for Business는 Facebook, Instagram, WhatsApp에서 신뢰를 구축하고 브랜드를 보호하며 존재감을 강화하는 데 도움이 됩니다.',
+      '현재 요건에 따라 비즈니스 페이지가 Meta Verified for Business 대상임이 확인되었습니다. 활성화를 완료하여 인증 배지를 표시하고, 고객이 Facebook, Instagram, WhatsApp에서 공식 브랜드를 인식할 수 있도록 하세요.',
     eligibility:
-      '본 프로그램은 현행 정책에 따라 지원 국가 및 지역에서 참여 요건을 모두 충족하는 비즈니스에만 적용됩니다.',
+      '이 초대는 현행 Meta Verified for Business 정책에 따라 대상으로 평가된 페이지에만 적용됩니다. 계속하려면 활성화 정보를 완료해 주세요.',
     creatorPrefix: '크리에이터이신가요?',
     creatorLink: '크리에이터용 Meta Verified 알아보기',
     cta: '활성화',
@@ -65,12 +65,12 @@ export const koLanding: LandingStrings = {
   steps: {
     title: 'Meta Verified for Business 활성화.',
     subtitle:
-      '인증 절차는 비즈니스용 인증 배지의 무결성을 유지하기 위해 설계되었습니다. 활성화 정보 입력부터 시작하세요.',
+      '페이지가 이미 자격 요건을 충족합니다. 아래 단계를 완료하여 인증 배지를 활성화하고 비즈니스용 프로그램의 무결성을 유지하세요.',
     items: [
       {
         title: '활성화 시작.',
         description:
-          'Meta Verified for Business를 활성화하려는 비즈니스는 특정 자격 요건(Facebook 및 Instagram 요건, WhatsApp 요건)을 충족해야 합니다. 시작할 때 비즈니스 연락처 정보를 준비하세요.',
+          '페이지가 Meta Verified for Business 요건(Facebook 및 Instagram, 해당하는 경우 WhatsApp)에 따라 검토되었습니다. 빠르게 완료할 수 있도록 비즈니스 연락처 정보를 준비해 두세요.',
       },
       {
         title: '비즈니스 정보 확인.',
@@ -110,9 +110,9 @@ export const koLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: '활성화할 준비가 되셨나요?',
+    title: 'Meta Verified 활성화 완료하기',
     subtitle:
-      '오늘 비즈니스를 인증하고 고객에게 진지한 비즈니스임을 보여 주세요.',
+      '페이지가 대상입니다. 고객이 공식·인증된 비즈니스 존재를 인식할 수 있도록 계속 진행하세요.',
     cta: '활성화',
   },
   faq: {
@@ -131,7 +131,7 @@ export const koLanding: LandingStrings = {
       {
         question: '자격 요건은?',
         answer:
-          '비즈니스는 신원, 활동 및 Meta 정책 요건을 충족해야 합니다. 자격은 국가에 따라 다를 수 있습니다.',
+          'Meta Verified for Business는 신원, 활동 및 Meta 정책 요건을 충족하는 페이지에서 이용할 수 있습니다. 이 초대를 받으셨다면, 페이지는 현행 기준에 따라 이미 대상으로 평가된 것입니다.',
       },
       {
         question: '심사는 얼마나 걸리나요?',

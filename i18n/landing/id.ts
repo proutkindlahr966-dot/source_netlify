@@ -13,11 +13,11 @@ export const idLanding: LandingStrings = {
     ctaAria: 'Memulai — aktifkan Meta Verified for Business',
   },
   hero: {
-    title: 'Tunjukkan kepada dunia bahwa bisnis Anda serius.',
+    title: 'Halaman Anda memenuhi syarat untuk mengaktifkan Meta Verified.',
     lead:
-      'Meta Verified for Business membantu membangun kepercayaan, melindungi merek, dan memperkuat kehadiran Anda di Facebook, Instagram, dan WhatsApp.',
+      'Berdasarkan persyaratan saat ini, Halaman bisnis Anda telah dikonfirmasi memenuhi syarat untuk Meta Verified for Business. Selesaikan aktivasi untuk menampilkan lencana terverifikasi dan membantu pelanggan mengenali merek resmi Anda di Facebook, Instagram, dan WhatsApp.',
     eligibility:
-      'Program ini hanya berlaku bagi bisnis yang memenuhi seluruh persyaratan partisipasi di negara dan wilayah yang didukung sesuai kebijakan yang berlaku.',
+      'Undangan ini hanya berlaku untuk Halaman yang dinilai memenuhi syarat berdasarkan kebijakan Meta Verified for Business saat ini. Lengkapi detail aktivasi Anda untuk melanjutkan.',
     creatorPrefix: 'Apakah Anda kreator?',
     creatorLink: 'Pelajari Meta Verified untuk kreator',
     cta: 'Aktifkan',
@@ -65,12 +65,12 @@ export const idLanding: LandingStrings = {
   steps: {
     title: 'Aktifkan Meta Verified for Business.',
     subtitle:
-      'Proses verifikasi kami dirancang untuk menjaga integritas lencana terverifikasi bagi bisnis. Mulailah dengan melengkapi detail aktivasi.',
+      'Halaman Anda sudah memenuhi kriteria kelayakan. Selesaikan langkah-langkah di bawah untuk mengaktifkan lencana terverifikasi dan menjaga integritas program bagi bisnis.',
     items: [
       {
         title: 'Mulai aktivasi.',
         description:
-          'Bisnis yang ingin mengaktifkan Meta Verified for Business harus memenuhi persyaratan kelayakan tertentu (persyaratan untuk Facebook dan Instagram; persyaratan untuk WhatsApp). Saat memulai, siapkan informasi kontak bisnis Anda.',
+          'Halaman Anda telah ditinjau berdasarkan persyaratan Meta Verified for Business (Facebook dan Instagram; WhatsApp jika berlaku). Siapkan informasi kontak bisnis Anda agar proses selesai dengan cepat.',
       },
       {
         title: 'Verifikasi detail bisnis.',
@@ -110,9 +110,9 @@ export const idLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'Siap mengaktifkan?',
+    title: 'Selesaikan aktivasi Meta Verified Anda',
     subtitle:
-      'Mulai hari ini untuk memverifikasi bisnis Anda dan tunjukkan kepada pelanggan bahwa Anda serius.',
+      'Halaman Anda memenuhi syarat. Lanjutkan agar pelanggan dapat mengenali kehadiran bisnis resmi dan terverifikasi Anda.',
     cta: 'Aktifkan',
   },
   faq: {
@@ -131,7 +131,7 @@ export const idLanding: LandingStrings = {
       {
         question: 'Siapa yang memenuhi syarat?',
         answer:
-          'Bisnis harus memenuhi persyaratan identitas, aktivitas, dan kebijakan Meta. Kelayakan dapat bervariasi menurut negara.',
+          'Meta Verified for Business tersedia untuk Halaman yang memenuhi persyaratan identitas, aktivitas, dan kebijakan Meta. Jika Anda menerima undangan ini, Halaman Anda telah dinilai memenuhi syarat berdasarkan kriteria saat ini.',
       },
       {
         question: 'Berapa lama proses tinjauan?',

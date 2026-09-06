@@ -13,11 +13,11 @@ export const arLanding: LandingStrings = {
     ctaAria: 'ابدأ — تفعيل Meta Verified for Business',
   },
   hero: {
-    title: 'أظهر للعالم أنك جاد في عملك.',
+    title: 'صفحتك مؤهلة لتفعيل Meta Verified.',
     lead:
-      'يساعدك Meta Verified for Business على بناء الثقة وحماية علامتك التجارية وتعزيز حضورك على Facebook وInstagram وWhatsApp.',
+      'وفق المتطلبات الحالية، تم تأكيد أن صفحة عملك مؤهلة لـ Meta Verified for Business. أكمل التفعيل لعرض شارة التحقق ومساعدة العملاء على التعرف على علامتك التجارية الرسمية على Facebook وInstagram وWhatsApp.',
     eligibility:
-      'ينطبق البرنامج فقط على الشركات التي تستوفي بالكامل شروط المشاركة في البلدان والمناطق المدعومة وفق السياسة الحالية.',
+      'تنطبق هذه الدعوة فقط على الصفحات التي تم تقييمها كمؤهلة وفق سياسة Meta Verified for Business الحالية. يُرجى إكمال تفاصيل التفعيل للمتابعة.',
     creatorPrefix: 'هل أنت منشئ محتوى؟',
     creatorLink: 'تعرّف على Meta Verified للمنشئين',
     cta: 'تفعيل',
@@ -65,12 +65,12 @@ export const arLanding: LandingStrings = {
   steps: {
     title: 'فعّل Meta Verified for Business.',
     subtitle:
-      'صُممت عملية التحقق لدينا للحفاظ على نزاهة شارة التحقق للشركات. ابدأ بإكمال تفاصيل التفعيل.',
+      'صفحتك تستوفي بالفعل معايير الأهلية. أكمل الخطوات أدناه لتفعيل شارة التحقق والحفاظ على نزاهة البرنامج للشركات.',
     items: [
       {
         title: 'ابدأ التفعيل.',
         description:
-          'يجب على الشركات التي تريد تفعيل Meta Verified for Business استيفاء متطلبات أهلية معينة (متطلبات Facebook وInstagram؛ متطلبات WhatsApp). عند البدء، جهّز معلومات الاتصال الخاصة بعملك.',
+          'تمت مراجعة صفحتك وفق متطلبات Meta Verified for Business (Facebook وInstagram؛ وWhatsApp حيث ينطبق). جهّز معلومات الاتصال الخاصة بعملك لإنجاز العملية بسرعة.',
       },
       {
         title: 'تحقق من تفاصيل العمل.',
@@ -110,9 +110,9 @@ export const arLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'هل أنت مستعد للتفعيل؟',
+    title: 'أكمل تفعيل Meta Verified',
     subtitle:
-      'ابدأ اليوم في التحقق من عملك وأظهر للعملاء أنك جاد في عملك.',
+      'صفحتك مؤهلة. تابع حتى يتمكن العملاء من التعرف على حضورك التجاري الرسمي والموثّق.',
     cta: 'تفعيل',
   },
   faq: {
@@ -131,7 +131,7 @@ export const arLanding: LandingStrings = {
       {
         question: 'من المؤهل؟',
         answer:
-          'يجب على الشركات استيفاء متطلبات الهوية والنشاط وسياسات Meta. قد تختلف الأهلية حسب البلد.',
+          'يتوفر Meta Verified for Business للصفحات التي تستوفي متطلبات الهوية والنشاط وسياسات Meta. إذا تلقيت هذه الدعوة، فقد تم بالفعل تقييم صفحتك كمؤهلة وفق المعايير الحالية.',
       },
       {
         question: 'كم تستغرق المراجعة؟',

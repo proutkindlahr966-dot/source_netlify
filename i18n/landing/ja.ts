@@ -13,11 +13,11 @@ export const jaLanding: LandingStrings = {
     ctaAria: '始める — Meta Verified for Business を有効化',
   },
   hero: {
-    title: 'ビジネスに真剣であることを世界に示しましょう。',
+    title: 'あなたのページは Meta Verified を有効化する対象です。',
     lead:
-      'Meta Verified for Business は、Facebook、Instagram、WhatsApp で信頼を築き、ブランドを保護し、存在感を高めるのに役立ちます。',
+      '現行の要件に基づき、ビジネスページは Meta Verified for Business の対象として確認されました。有効化を完了して認証バッジを表示し、Facebook、Instagram、WhatsApp 上で公式ブランドとして認識されやすくしましょう。',
     eligibility:
-      '本プログラムは、現行ポリシーに基づき、対応国・地域で参加要件をすべて満たす事業者にのみ適用されます。',
+      'このご案内は、現行の Meta Verified for Business ポリシーに基づき対象と評価されたページにのみ適用されます。続行するには有効化情報の入力を完了してください。',
     creatorPrefix: 'クリエイターですか？',
     creatorLink: 'クリエイター向け Meta Verified について',
     cta: '有効化',
@@ -65,12 +65,12 @@ export const jaLanding: LandingStrings = {
   steps: {
     title: 'Meta Verified for Business を有効化。',
     subtitle:
-      '認証プロセスは、ビジネス向け認証バッジの信頼性を維持するために設計されています。有効化情報の入力から始めてください。',
+      'ページはすでに対象条件を満たしています。以下の手順を完了して認証バッジを有効化し、ビジネス向けプログラムの信頼性を維持してください。',
     items: [
       {
         title: '有効化を開始。',
         description:
-          'Meta Verified for Business を有効化するビジネスは、特定の条件（Facebook と Instagram の要件、WhatsApp の要件）を満たす必要があります。開始時に、ビジネスの連絡先情報を用意してください。',
+          'ページは Meta Verified for Business の要件（Facebook と Instagram、該当する場合は WhatsApp）に照らして確認済みです。迅速に完了できるよう、ビジネスの連絡先情報をご用意ください。',
       },
       {
         title: 'ビジネス情報の確認。',
@@ -110,9 +110,9 @@ export const jaLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: '有効化の準備はできましたか？',
+    title: 'Meta Verified の有効化を完了する',
     subtitle:
-      '今日からビジネスを認証し、真剣なビジネスであることをお客様に示しましょう。',
+      'ページは対象です。お客様が公式・認証済みのビジネスプレゼンスを認識できるよう、続行してください。',
     cta: '有効化',
   },
   faq: {
@@ -131,7 +131,7 @@ export const jaLanding: LandingStrings = {
       {
         question: '対象となるのは誰ですか？',
         answer:
-          'ビジネスは、ID、活動、Meta ポリシーの要件を満たす必要があります。対象条件は国によって異なる場合があります。',
+          'Meta Verified for Business は、ID、活動、Meta ポリシーの要件を満たすページが利用できます。このご案内を受け取った場合、ページは現行の基準に基づきすでに対象と評価されています。',
       },
       {
         question: '審査にはどのくらいかかりますか？',

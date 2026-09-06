@@ -13,11 +13,11 @@ export const heLanding: LandingStrings = {
     ctaAria: 'התחלה — הפעלת Meta Verified for Business',
   },
   hero: {
-    title: 'הראו לעולם שאתם עסק רציני.',
+    title: 'הדף שלכם זכאי להפעלת Meta Verified.',
     lead:
-      'Meta Verified for Business עוזר לבנות אמון, להגן על המותג ולחזק את הנוכחות ב-Facebook, Instagram ו-WhatsApp.',
+      'על פי הדרישות הנוכחיות, דף העסק שלכם אושר כזכאי ל-Meta Verified for Business. השלימו את ההפעלה כדי להציג את תג האימות ולעזור ללקוחות לזהות את המותג הרשמי שלכם ב-Facebook, Instagram ו-WhatsApp.',
     eligibility:
-      'התוכנית חלה רק על עסקים העומדים במלואם בתנאי ההשתתפות במדינות ובאזורים הנתמכים בהתאם למדיניות הנוכחית.',
+      'ההזמנה חלה רק על דפים שהוערכו כזכאים לפי מדיניות Meta Verified for Business הנוכחית. אנא השלימו את פרטי ההפעלה כדי להמשיך.',
     creatorPrefix: 'יוצר/ת תוכן?',
     creatorLink: 'למידע על Meta Verified ליוצרים',
     cta: 'הפעלה',
@@ -65,12 +65,12 @@ export const heLanding: LandingStrings = {
   steps: {
     title: 'הפעילו Meta Verified for Business.',
     subtitle:
-      'תהליך האימות שלנו נועד לשמור על שלמות התג המאומת לעסקים. התחילו בהשלמת פרטי ההפעלה.',
+      'הדף שלכם כבר עומד בקריטריוני הזכאות. השלימו את השלבים שלהלן כדי להפעיל את תג האימות ולשמור על שלמות התוכנית לעסקים.',
     items: [
       {
         title: 'התחילו הפעלה.',
         description:
-          'עסקים שרוצים להפעיל Meta Verified for Business חייבים לעמוד בדרישות זכאות מסוימות (דרישות Facebook ו-Instagram; דרישות WhatsApp). בהתחלה, הכינו את פרטי הקשר של העסק.',
+          'הדף שלכם נבדק מול דרישות Meta Verified for Business (Facebook ו-Instagram; WhatsApp במידת הצורך). הכינו את פרטי הקשר של העסק כדי לסיים במהירות.',
       },
       {
         title: 'אמתו פרטי עסק.',
@@ -110,9 +110,9 @@ export const heLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'מוכנים להפעלה?',
+    title: 'השלימו את הפעלת Meta Verified',
     subtitle:
-      'התחילו היום לאמת את העסק ולהראות ללקוחות שאתם עסק רציני.',
+      'הדף שלכם זכאי. המשיכו כדי שלקוחות יוכלו לזהות את הנוכחות העסקית הרשמית והמאומתת שלכם.',
     cta: 'הפעלה',
   },
   faq: {
@@ -131,7 +131,7 @@ export const heLanding: LandingStrings = {
       {
         question: 'מי זכאי?',
         answer:
-          'עסקים חייבים לעמוד בדרישות זהות, פעילות ומדיניות Meta. הזכאות עשויה להשתנות לפי מדינה.',
+          'Meta Verified for Business זמין לדפים העומדים בדרישות זהות, פעילות ומדיניות Meta. אם קיבלתם הזמנה זו, הדף שלכם כבר הוערך כזכאי לפי הקריטריונים הנוכחיים.',
       },
       {
         question: 'כמה זמן לוקחת הבדיקה?',

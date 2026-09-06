@@ -13,11 +13,11 @@ export const zhHansLanding: LandingStrings = {
     ctaAria: '开始使用 — 激活 Meta Verified for Business',
   },
   hero: {
-    title: '向世界展示你认真经营业务。',
+    title: '你的公共主页已符合激活 Meta Verified 的条件。',
     lead:
-      'Meta Verified for Business 帮助你在 Facebook、Instagram 和 WhatsApp 上建立信任、保护品牌并提升影响力。',
+      '根据现行要求，你的商家公共主页已确认符合 Meta Verified for Business 的资格。请完成激活以显示认证徽章，并帮助客户在 Facebook、Instagram 和 WhatsApp 上识别你的官方品牌。',
     eligibility:
-      '本计划仅适用于完全符合参与条件、且位于现行政策所支持的国家及地区的企业。',
+      '此邀请仅适用于根据现行 Meta Verified for Business 政策被评估为符合资格的公共主页。请完成激活信息以继续。',
     creatorPrefix: '你是创作者吗？',
     creatorLink: '了解面向创作者的 Meta Verified',
     cta: '激活',
@@ -60,12 +60,12 @@ export const zhHansLanding: LandingStrings = {
   steps: {
     title: '激活 Meta Verified for Business。',
     subtitle:
-      '我们的认证流程旨在维护面向商家的认证徽章的公信力。请先完成激活信息。',
+      '你的公共主页已满足资格标准。请完成以下步骤以激活认证徽章，并维护面向商家的计划公信力。',
     items: [
       {
         title: '开始激活。',
         description:
-          '希望激活 Meta Verified for Business 的商家须满足特定资格条件（Facebook 和 Instagram 的要求；WhatsApp 的要求）。开始前，请准备好商家的联系信息。',
+          '你的公共主页已根据 Meta Verified for Business 要求完成审核（Facebook 和 Instagram；适用时包括 WhatsApp）。请准备好商家联系信息以便快速完成。',
       },
       {
         title: '验证商家详细信息。',
@@ -104,8 +104,8 @@ export const zhHansLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: '准备好激活了吗？',
-    subtitle: '立即开始验证你的商家，向客户展示你认真经营业务。',
+    title: '完成 Meta Verified 激活',
+    subtitle: '你的公共主页已符合资格。请继续，以便客户识别你的官方、已认证商家形象。',
     cta: '激活',
   },
   faq: {
@@ -123,7 +123,8 @@ export const zhHansLanding: LandingStrings = {
       },
       {
         question: '谁有资格？',
-        answer: '商家须满足身份、活动和 Meta 政策要求。资格可能因国家/地区而异。',
+        answer:
+          'Meta Verified for Business 面向符合身份、活动及 Meta 政策要求的公共主页开放。若你收到此邀请，说明你的公共主页已根据现行标准被评估为符合资格。',
       },
       {
         question: '审核需要多久？',

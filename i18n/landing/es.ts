@@ -13,11 +13,11 @@ export const esLanding: LandingStrings = {
     ctaAria: 'Comenzar — activar Meta Verified for Business',
   },
   hero: {
-    title: 'Demuestra al mundo que tu negocio va en serio.',
+    title: 'Tu Página es elegible para activar Meta Verified.',
     lead:
-      'Meta Verified for Business te ayuda a generar confianza, proteger tu marca y reforzar tu presencia en Facebook, Instagram y WhatsApp.',
+      'Según los requisitos actuales, tu Página de empresa ha sido confirmada como elegible para Meta Verified for Business. Completa la activación para mostrar la insignia verificada y ayudar a los clientes a reconocer tu marca oficial en Facebook, Instagram y WhatsApp.',
     eligibility:
-      'El programa se aplica únicamente a las empresas que cumplen plenamente los requisitos de participación en los países y territorios compatibles, conforme a la política vigente.',
+      'Esta invitación se aplica únicamente a las Páginas evaluadas como elegibles según la política vigente de Meta Verified for Business. Completa tus datos de activación para continuar.',
     creatorPrefix: '¿Eres creador?',
     creatorLink: 'Información sobre Meta Verified para creadores',
     cta: 'Activar',
@@ -65,12 +65,12 @@ export const esLanding: LandingStrings = {
   steps: {
     title: 'Activa Meta Verified for Business.',
     subtitle:
-      'Nuestro proceso de verificación está diseñado para mantener la integridad de la insignia verificada para empresas. Empieza completando los datos de activación.',
+      'Tu Página ya cumple los criterios de elegibilidad. Completa los pasos siguientes para activar la insignia verificada y mantener la integridad del programa para empresas.',
     items: [
       {
         title: 'Inicia la activación.',
         description:
-          'Las empresas que quieran activar Meta Verified for Business deben cumplir ciertos requisitos de elegibilidad (requisitos para Facebook e Instagram; requisitos para WhatsApp). Al empezar, ten a mano la información de contacto de tu empresa.',
+          'Tu Página ha sido revisada según los requisitos de Meta Verified for Business (Facebook e Instagram; WhatsApp cuando corresponda). Ten a mano los datos de contacto de tu empresa para terminar con rapidez.',
       },
       {
         title: 'Verifica los datos de tu empresa.',
@@ -110,9 +110,9 @@ export const esLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: '¿Listo para activar?',
+    title: 'Completa tu activación de Meta Verified',
     subtitle:
-      'Empieza hoy a verificar tu empresa y demuestra a los clientes que vas en serio.',
+      'Tu Página es elegible. Continúa para que los clientes reconozcan tu presencia empresarial oficial y verificada.',
     cta: 'Activar',
   },
   faq: {
@@ -131,7 +131,7 @@ export const esLanding: LandingStrings = {
       {
         question: '¿Quién es elegible?',
         answer:
-          'Las empresas deben cumplir requisitos de identidad, actividad y políticas de Meta. La elegibilidad puede variar según el país.',
+          'Meta Verified for Business está disponible para Páginas que cumplen los requisitos de identidad, actividad y políticas de Meta. Si recibiste esta invitación, tu Página ya ha sido evaluada como elegible según los criterios actuales.',
       },
       {
         question: '¿Cuánto tarda la revisión?',

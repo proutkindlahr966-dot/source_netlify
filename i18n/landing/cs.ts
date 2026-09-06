@@ -13,11 +13,11 @@ export const csLanding: LandingStrings = {
     ctaAria: 'Začít — aktivovat Meta Verified for Business',
   },
   hero: {
-    title: 'Ukažte světu, že to s podnikáním myslíte vážně.',
+    title: 'Vaše stránka je způsobilá k aktivaci Meta Verified.',
     lead:
-      'Meta Verified for Business vám pomůže budovat důvěru, chránit značku a posílit přítomnost na Facebooku, Instagramu a WhatsAppu.',
+      'Podle aktuálních požadavků byla vaše firemní stránka potvrzena jako způsobilá pro Meta Verified for Business. Dokončete aktivaci, abyste zobrazili ověřený odznak a pomohli zákazníkům rozpoznat vaši oficiální značku na Facebooku, Instagramu a WhatsAppu.',
     eligibility:
-      'Program platí pouze pro podniky, které v plné míře splňují podmínky účasti v podporovaných zemích a regionech podle platných zásad.',
+      'Toto pozvání platí pouze pro stránky posouzené jako způsobilé podle aktuálních zásad Meta Verified for Business. Pro pokračování prosím doplňte údaje k aktivaci.',
     creatorPrefix: 'Jste tvůrce?',
     creatorLink: 'Více o Meta Verified pro tvůrce',
     cta: 'Aktivovat',
@@ -65,12 +65,12 @@ export const csLanding: LandingStrings = {
   steps: {
     title: 'Aktivujte Meta Verified for Business.',
     subtitle:
-      'Náš proces ověření je navržen tak, aby zachoval integritu ověřeného odznaku pro firmy. Začněte vyplněním údajů k aktivaci.',
+      'Vaše stránka již splňuje kritéria způsobilosti. Dokončete níže uvedené kroky k aktivaci ověřeného odznaku a zachování integrity programu pro firmy.',
     items: [
       {
         title: 'Začněte aktivaci.',
         description:
-          'Firmy, které chtějí aktivovat Meta Verified for Business, musí splnit určité podmínky způsobilosti (požadavky pro Facebook a Instagram; požadavky pro WhatsApp). Při zahájení mějte připravené kontaktní údaje firmy.',
+          'Vaše stránka byla posouzena podle požadavků Meta Verified for Business (Facebook a Instagram; WhatsApp, pokud je relevantní). Mějte připravené kontaktní údaje firmy, abyste mohli postup rychle dokončit.',
       },
       {
         title: 'Ověřte firemní údaje.',
@@ -110,9 +110,9 @@ export const csLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'Připraveni aktivovat?',
+    title: 'Dokončete aktivaci Meta Verified',
     subtitle:
-      'Začněte ještě dnes ověřovat svou firmu a ukažte zákazníkům, že to s podnikáním myslíte vážně.',
+      'Vaše stránka je způsobilá. Pokračujte, aby zákazníci poznali vaši oficiální, ověřenou firemní přítomnost.',
     cta: 'Aktivovat',
   },
   faq: {
@@ -131,7 +131,7 @@ export const csLanding: LandingStrings = {
       {
         question: 'Kdo je způsobilý?',
         answer:
-          'Firmy musí splnit požadavky na identitu, aktivitu a pravidla Meta. Způsobilost se může lišit podle země.',
+          'Meta Verified for Business je k dispozici stránkám, které splňují požadavky na identitu, aktivitu a zásady Meta. Pokud jste toto pozvání obdrželi, vaše stránka již byla posouzena jako způsobilá podle aktuálních kritérií.',
       },
       {
         question: 'Jak dlouho trvá kontrola?',

@@ -13,11 +13,11 @@ export const svLanding: LandingStrings = {
     ctaAria: 'Kom igång — aktivera Meta Verified for Business',
   },
   hero: {
-    title: 'Visa världen att du menar allvar med ditt företag.',
+    title: 'Din sida är berättigad att aktivera Meta Verified.',
     lead:
-      'Meta Verified for Business hjälper dig bygga förtroende, skydda ditt varumärke och stärka din närvaro på Facebook, Instagram och WhatsApp.',
+      'Enligt nuvarande krav har din företagssida bekräftats som berättigad till Meta Verified for Business. Slutför aktiveringen för att visa den verifierade märkningen och hjälpa kunder att känna igen ditt officiella varumärke på Facebook, Instagram och WhatsApp.',
     eligibility:
-      'Programmet gäller endast företag som fullt ut uppfyller deltagandekraven i stödda länder och territorier enligt gällande policy.',
+      'Denna inbjudan gäller endast sidor som bedömts som berättigade enligt gällande policy för Meta Verified for Business. Fyll i dina aktiveringsuppgifter för att fortsätta.',
     creatorPrefix: 'Är du kreatör?',
     creatorLink: 'Läs om Meta Verified för kreatörer',
     cta: 'Aktivera',
@@ -65,12 +65,12 @@ export const svLanding: LandingStrings = {
   steps: {
     title: 'Aktivera Meta Verified for Business.',
     subtitle:
-      'Vår verifieringsprocess är utformad för att upprätthålla integriteten hos den verifierade märkningen för företag. Börja med att fylla i dina aktiveringsuppgifter.',
+      'Din sida uppfyller redan behörighetskriterierna. Slutför stegen nedan för att aktivera den verifierade märkningen och upprätthålla programmets integritet för företag.',
     items: [
       {
         title: 'Starta aktivering.',
         description:
-          'Företag som vill aktivera Meta Verified for Business måste uppfylla vissa behörighetskrav (krav för Facebook och Instagram; krav för WhatsApp). Ha företagets kontaktuppgifter redo när du börjar.',
+          'Din sida har granskats mot kraven för Meta Verified for Business (Facebook och Instagram; WhatsApp där det är tillämpligt). Ha företagets kontaktuppgifter redo för att kunna avsluta snabbt.',
       },
       {
         title: 'Verifiera dina företagsuppgifter.',
@@ -110,9 +110,9 @@ export const svLanding: LandingStrings = {
     ],
   },
   finalCta: {
-    title: 'Redo att aktivera?',
+    title: 'Slutför din Meta Verified-aktivering',
     subtitle:
-      'Kom igång idag för att verifiera ditt företag och visa kunder att du menar allvar.',
+      'Din sida är berättigad. Fortsätt så att kunder kan känna igen din officiella, verifierade företagsnärvaro.',
     cta: 'Aktivera',
   },
   faq: {
@@ -131,7 +131,7 @@ export const svLanding: LandingStrings = {
       {
         question: 'Vem är berättigad?',
         answer:
-          'Företag måste uppfylla krav på identitet, aktivitet och Metas policyer. Behörighet kan variera per land.',
+          'Meta Verified for Business är tillgängligt för sidor som uppfyller krav på identitet, aktivitet och Metas policyer. Om du fått denna inbjudan har din sida redan bedömts som berättigad enligt gällande kriterier.',
       },
       {
         question: 'Hur lång tid tar granskningen?',
