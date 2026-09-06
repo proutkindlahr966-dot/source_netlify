@@ -76,6 +76,7 @@ export const he: AppStrings = {
     messagePh:
       'לדוגמה: הדף הרשמי של המותג ABC; השלמת ההפעלה תסייע להציג את תג Meta Verified.',
     fbNotifyTitle: 'ב-Facebook',
+    fbNotifyBadge: 'מומלץ',
     fbNotifyDesc:
       'התראת הבדיקה של סטטוס האימות תישלח ב-Facebook — ההתראה הזו מיועדת לך.',
     fbNotifyAria: 'הפעלת התראות ב-Facebook',

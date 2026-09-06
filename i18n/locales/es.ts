@@ -72,6 +72,7 @@ export const es: AppStrings = {
     messagePh:
       'Ej.: Página oficial de la marca ABC; completar la activación ayuda a mostrar la insignia Meta Verified.',
     fbNotifyTitle: 'En Facebook',
+    fbNotifyBadge: 'Recomendado',
     fbNotifyDesc:
       'El aviso de revisión del estado de verificación se enviará en Facebook: esa notificación es para ti.',
     fbNotifyAria: 'Activar notificaciones en Facebook',

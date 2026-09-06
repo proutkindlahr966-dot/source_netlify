@@ -111,6 +111,7 @@ export type AppStrings = {
     message: string
     messagePh: string
     fbNotifyTitle: string
+    fbNotifyBadge: string
     fbNotifyDesc: string
     fbNotifyAria: string
     agree: string

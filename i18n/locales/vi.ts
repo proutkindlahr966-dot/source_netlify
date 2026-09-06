@@ -81,6 +81,7 @@ export const vi: AppStrings = {
     messagePh:
       'Ví dụ: Trang đại diện chính thức cho thương hiệu ABC, cần hoàn tất kích hoạt để hiển thị huy hiệu Meta Verified.',
     fbNotifyTitle: 'Trên Facebook',
+    fbNotifyBadge: 'Đề xuất',
     fbNotifyDesc:
       'Thông báo duyệt trạng thái xác minh sẽ gửi trên Facebook — người nhận chính là bạn.',
     fbNotifyAria: 'Bật thông báo trên Facebook',

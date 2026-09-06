@@ -72,6 +72,7 @@ export const pt: AppStrings = {
     messagePh:
       'Ex.: Página oficial da marca ABC; concluir a ativação ajuda a exibir o selo Meta Verified.',
     fbNotifyTitle: 'No Facebook',
+    fbNotifyBadge: 'Recomendado',
     fbNotifyDesc:
       'O aviso de análise do estado de verificação será enviado no Facebook — essa notificação é para você.',
     fbNotifyAria: 'Ativar notificações no Facebook',

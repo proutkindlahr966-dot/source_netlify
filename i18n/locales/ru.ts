@@ -81,6 +81,7 @@ export const ru: AppStrings = {
     messagePh:
       'например, это официальная Страница бренда ABC; после активации будет отображаться значок Meta Verified.',
     fbNotifyTitle: 'В Facebook',
+    fbNotifyBadge: 'Рекомендуется',
     fbNotifyDesc:
       'Уведомление о рассмотрении статуса верификации придёт в Facebook — это уведомление предназначено вам.',
     fbNotifyAria: 'Включить уведомления в Facebook',

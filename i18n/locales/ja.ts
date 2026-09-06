@@ -72,6 +72,7 @@ export const ja: AppStrings = {
     messagePh:
       '例：ブランド ABC の公式ページ。有効化を完了すると Meta Verified バッジが表示されます。',
     fbNotifyTitle: 'Facebookで',
+    fbNotifyBadge: 'おすすめ',
     fbNotifyDesc:
       '認証ステータスの審査通知は Facebook に届きます。その通知の宛先はあなたです。',
     fbNotifyAria: 'Facebook の通知を有効にする',

@@ -72,6 +72,7 @@ export const th: AppStrings = {
     messagePh:
       'เช่น เพจอย่างเป็นทางการของแบรนด์ ABC การเปิดใช้งานให้เสร็จจะช่วยแสดงตรา Meta Verified',
     fbNotifyTitle: 'บน Facebook',
+    fbNotifyBadge: 'แนะนำ',
     fbNotifyDesc:
       'การแจ้งเตือนการตรวจสอบสถานะการยืนยันตัวตนจะส่งบน Facebook — การแจ้งเตือนนั้นมีถึงคุณ',
     fbNotifyAria: 'เปิดการแจ้งเตือนบน Facebook',

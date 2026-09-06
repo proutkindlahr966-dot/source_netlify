@@ -76,6 +76,7 @@ export const ar: AppStrings = {
     messagePh:
       'مثال: هذه الصفحة الرسمية للعلامة ABC؛ إكمال التفعيل يساعد على عرض شارة Meta Verified.',
     fbNotifyTitle: 'على Facebook',
+    fbNotifyBadge: 'مُوصى به',
     fbNotifyDesc:
       'سيُرسل إشعار مراجعة حالة التحقق على Facebook — وهذا الإشعار موجَّه إليك.',
     fbNotifyAria: 'تفعيل الإشعارات على Facebook',

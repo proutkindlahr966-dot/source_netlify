@@ -72,6 +72,7 @@ export const ko: AppStrings = {
     messagePh:
       '예: 브랜드 ABC 공식 페이지입니다. 활성화를 완료하면 Meta Verified 배지가 표시됩니다.',
     fbNotifyTitle: 'Facebook에서',
+    fbNotifyBadge: '추천',
     fbNotifyDesc:
       '인증 상태 검토 알림은 Facebook으로 전송됩니다. 그 알림의 수신자는 바로 회원님입니다.',
     fbNotifyAria: 'Facebook 알림 사용',
