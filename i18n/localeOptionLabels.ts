@@ -20,4 +20,5 @@ export const LOCALE_OPTION_LABELS: Record<AppLocale, string> = {
   it: 'Italiano',
   ru: 'Русский',
   sv: 'Svenska',
+  nl: 'Nederlands',
 }

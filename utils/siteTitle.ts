@@ -23,6 +23,7 @@ const TITLE_BY_LOCALE: Partial<Record<AppLocale, string>> = {
   it: 'Meta Verified: Ottieni il badge verificato su Facebook',
   ru: 'Meta Verified: получите значок подтверждения в Facebook',
   sv: 'Meta Verified: Få den verifierade märkningen på Facebook',
+  nl: 'Meta Verified: Ontvang de geverifieerde badge op Facebook',
 }
 
 const DESCRIPTION_BY_LOCALE: Partial<Record<AppLocale, string>> = {
