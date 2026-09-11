@@ -163,6 +163,14 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
   // —— Tiếng Thụy Điển ——
   SE: 'sv',
   AX: 'sv',
+
+  // —— Tiếng Hà Lan (Hà Lan, Suriname & Caribe Hà Lan) ——
+  NL: 'nl',
+  SR: 'nl',
+  AW: 'nl',
+  CW: 'nl',
+  SX: 'nl',
+  BQ: 'nl',
 }
 
 export function countryCodeToAppLocale(countryCode: string | undefined): AppLocale {

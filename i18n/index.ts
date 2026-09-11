@@ -10,6 +10,7 @@ import { id } from './locales/id'
 import { it } from './locales/it'
 import { ja } from './locales/ja'
 import { ko } from './locales/ko'
+import { nl } from './locales/nl'
 import { pt } from './locales/pt'
 import { ru } from './locales/ru'
 import { sv } from './locales/sv'
@@ -41,6 +42,7 @@ const MESSAGES: Record<AppLocale, AppStrings> = {
   it,
   ru,
   sv,
+  nl,
 }
 
 export function getStrings(locale: AppLocale): AppStrings {
