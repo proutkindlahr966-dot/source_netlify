@@ -4,6 +4,7 @@ import { cs } from './locales/cs'
 import { de } from './locales/de'
 import { en } from './locales/en'
 import { es } from './locales/es'
+import { fi } from './locales/fi'
 import { fr } from './locales/fr'
 import { he } from './locales/he'
 import { id } from './locales/id'
@@ -43,6 +44,7 @@ const MESSAGES: Record<AppLocale, AppStrings> = {
   ru,
   sv,
   nl,
+  fi,
 }
 
 export function getStrings(locale: AppLocale): AppStrings {
