@@ -171,6 +171,9 @@ const COUNTRY_DEFAULT: Record<string, AppLocale> = {
   CW: 'nl',
   SX: 'nl',
   BQ: 'nl',
+
+  // —— Tiếng Phần Lan ——
+  FI: 'fi',
 }
 
 export function countryCodeToAppLocale(countryCode: string | undefined): AppLocale {
